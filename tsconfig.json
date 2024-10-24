@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "outDir": "dista",
+      "module": "ES6",
+      "moduleResolution": "node",
+      "target": "ES6",
+      "strict": true
+    },
+    "include": ["src/ts/**/*.ts"]
+  }

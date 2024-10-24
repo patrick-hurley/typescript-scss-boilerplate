@@ -1,0 +1,26 @@
+{
+    "name": "frontend-build",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "node-sass src/scss/main.scss dist/main.css",
+        "build:ts": "tsc",
+        "copy:html": "cp src/index.html dist/index.html",
+        "serve": "browser-sync start --server 'dist' --files 'dist' reload --url http://localhost:3000",
+        "watch:css": "nodemon -e scss -x \"npm run build:css\" --ignore dist/ --ignore node_modules/",
+        "watch:ts": "tsc --watch",
+        "watch:html": "nodemon -e html -x \"npm run copy:html\" --ignore dist/ --ignore node_modules/",
+        "start": "concurrently \"npm run watch:css\" \"npm run watch:ts\" \"npm run watch:html\" \"npm run serve\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^3.0.3",
+        "concurrently": "^9.0.1",
+        "node-sass": "^9.0.0",
+        "nodemon": "^3.1.7",
+        "typescript": "^5.6.3"
+    }
+}
