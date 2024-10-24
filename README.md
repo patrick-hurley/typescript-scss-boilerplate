@@ -14,8 +14,7 @@ This repository provides a basic development boilerplate for projects using Type
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/patrick-hurley/typescript-scss-boilerplate.git
 2. Install the necessary packages:
    ```bash
    npm install
