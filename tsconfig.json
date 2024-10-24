@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "dista",
+      "outDir": "dist",
       "module": "ES6",
       "moduleResolution": "node",
       "target": "ES6",
